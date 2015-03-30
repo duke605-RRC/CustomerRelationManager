@@ -1,3 +1,22 @@
 // Place all the styles related to the Customers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+div.customer-card {
+  width: 250px;
+  height: 350px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 7px;
+  border: 1px solid #444;
+  box-shadow: 1px 1px 2px #444;
+  box-sizing: border-box;
+  padding: 5px;
+
+  p.actions {
+    text-align: right;
+  }
+
+  img {
+    height: 150px;
+  }
+}

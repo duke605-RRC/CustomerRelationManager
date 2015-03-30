@@ -1,9 +1,10 @@
 <div class="customer-card">
+  <p class="actions"><%= link_to 'edit', edit_customer_path(customer) %> <%= link_to 'x', customer_path(customer), method: :delete, data: {confirm: "Are you sure you want to delete #{customer.full_name}"} %></p>
   <h2><%= customer.full_name %></h2>
   <%= image_tag customer.image %>
   <p><strong>Phone: </strong><%= customer.phone_number %></p>
 
-  <% if customer.email %>
+  <% if customer.email != nil && customer.email != ''  %>
     <p><strong>Email: </strong><%= customer.email %></p>
   <% end %>
 
