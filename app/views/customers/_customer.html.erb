@@ -1,0 +1,11 @@
+<div class="customer-card">
+  <h2><%= customer.full_name %></h2>
+  <%= image_tag customer.image %>
+  <p><strong>Phone: </strong><%= customer.phone_number %></p>
+
+  <% if customer.email %>
+    <p><strong>Email: </strong><%= customer.email %></p>
+  <% end %>
+
+  <p><strong>Notes: </strong><%= customer.notes %></p>
+</div>
